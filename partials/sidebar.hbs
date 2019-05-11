@@ -7,27 +7,38 @@
         {{/if}}
 
         {{!-- Recent posts --}}
-        <section>
+        <section style="padding-bottom: 0;">
             <header class="major">
-                <h2>Recent Posts</h2>
+                <h2>Support The Show</h2>
             </header>
             <div class="mini-posts">
                 {{!-- We're just grabbing the 3 latest posts here but you can change
                 this to filter for a specific tag or order depending on what you want.
                 More info: https://docs.ghost.org/api/handlebars-themes/helpers/get/ --}}
-                {{#get "posts" limit="3" as |mini_post|}}
+                {{!-- {{#get "posts" limit="3" as |mini_post|}}
                     {{#foreach mini_post}}
                     <article>
                         <h3><a href="{{url}}">{{title}}</a></h3>
                         <p>{{excerpt words="15"}}</p>
                     </article>
                     {{/foreach}}
-                {{/get}}
+                {{/get}} --}}
+                <article>
+                    <a href="https://www.patreon.com/bePatron?u=469035" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+                </article>
+                <article>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="2528RCAZG4R3Y" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </article>
             </div>
         </section>
 
         {{!-- Contact --}}
-        {{#get "posts" slug="contact"as |contact|}}
+        {{!-- {{#get "posts" slug="contact"as |contact|}}
             {{#if contact}}{{#foreach contact}}
                 <section>
                     <header class="major">
@@ -36,7 +47,29 @@
                     {{content}}
                 </section>
             {{/foreach}}{{/if}}
-        {{/get}}
+        {{/get}} --}}
+
+        <section>
+            <header class="major">
+                <h2>Contact</h2>
+            </header>
+            <article>
+                <h3>Email</h3>
+                <p>historyofthegreatwar@outlook.com</p>
+            </article>
+            <article>
+                <h3>Twitter</h3>
+                <p><a href="twitter.com/historygreatwar">HistoryGreatWar</a></p>
+            </article>
+            <article>
+                <h3>Facebook</h3>
+                <p><a href="facebook.com/historyofthegreatwar">HistoryoftheGreatWar</a></p>
+            </article>
+            <article>
+                <h3>Discord</h3>
+                <p><a href="https://discord.gg/ASbBjaT">History of the Great War</a></p>
+            </article>
+        </section>
 
         {{!-- Footer --}}
         <footer id="footer">

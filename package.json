@@ -1,8 +1,8 @@
 {
-    "name": "editorial",
+    "name": "editorial-custom",
     "description": "This is Editorial, a news-oriented theme for Ghost.",
     "demo": "https://editorial.ghost.io",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
@@ -60,6 +60,6 @@
         "node-sass": "^4.10.0"
     },
     "config": {
-        "posts_per_page": 6
+        "posts_per_page": 12
     }
 }
